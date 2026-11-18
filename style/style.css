@@ -1,0 +1,169 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #ffffff;
+    color: #111;
+    font-size: 17px;
+}
+
+.cv-container {
+    width: 645px;
+    max-width: 95%;
+    margin: 40px auto;
+}
+
+/* Header Section */
+.cv-header {
+    height: 128px;
+    position: relative;
+}
+
+.cv-title {
+    text-align: center;
+    padding-top: 2px;
+    padding-right: 90px;
+}
+
+.cv-title h3 {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 25px;
+}
+
+.profile-picture {
+    position: absolute;
+    top: 0;
+    right: 86px;
+    width: 123px;
+    height: 126px;
+    border: 1px solid #ddd;
+}
+
+.profile-picture svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Section Heading */
+.section {
+    margin-top: 0;
+}
+
+.section-title {
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 22px;
+}
+
+.section-title::before {
+    content: "▪";
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-decoration: none;
+}
+
+/* Personal Information */
+.info-table {
+    width: 100%;
+}
+
+.info-row {
+    display: grid;
+    grid-template-columns: 225px 20px 1fr;
+    line-height: 24px;
+    font-size: 17px;
+}
+
+.info-row span:nth-child(2) {
+    font-weight: bold;
+}
+
+/* Educational Qualification */
+.education {
+    margin-top: 32px;
+}
+
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 17px;
+}
+
+.education-table th,
+.education-table td {
+    border: 1px solid #111;
+    padding: 3px 5px;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+.education-table th {
+    font-size: 17px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+
+    .cv-container {
+        width: 95%;
+        margin: 25px auto;
+    }
+
+    .cv-header {
+        height: 145px;
+    }
+
+    .cv-title {
+        padding-right: 100px;
+        padding-top: 10px;
+    }
+
+    .cv-title h3 {
+        font-size: 16px;
+    }
+
+    .profile-picture {
+        width: 90px;
+        height: 95px;
+        right: 0;
+    }
+
+    .info-row {
+        grid-template-columns: 38% 5% 57%;
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .section-title {
+        font-size: 15px;
+    }
+
+    .education-table {
+        font-size: 12px;
+    }
+
+    .education-table th,
+    .education-table td {
+        padding: 4px 2px;
+        font-size: 12px;
+        line-height: 17px;
+        overflow-wrap: anywhere;
+    }
+
+    .education {
+        margin-top: 25px;
+    }
+}
